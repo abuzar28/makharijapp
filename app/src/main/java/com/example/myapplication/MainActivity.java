@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile);
+        setContentView(R.layout.activity_main);
 
         buttonrepo=(Button) findViewById(R.id.buttonrepo);
         buttonmainactivity=(Button) findViewById(R.id.btnMainActivity);
@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         buttonrepo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openWebPage("https://github.com/muhammad-asher/EmissionPoints-makharijal-huruf.git");
+                openWebPage("https://github.com/abuzar28/makharijapp");
 
             }
         });
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         buttonmainactivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent =new Intent(ProfileActivity.this, MainAppActivity.class);
+                Intent intent =new Intent(MainActivity.this,MainApppActivity.class);
                 startActivity(intent);
             }
         });
